@@ -1,0 +1,41 @@
+'''
+QUESTION:
+Write a program to determine whether n is a factorial number or not. 
+A factorial number is a number that is a factorial of another number.
+'''
+
+# PROGRAM (Answer):
+
+#1st Method
+k = 1
+n = int(input())
+if n<=0:
+    print("Invalid Input")  #here, you can also give print("no")
+else:
+    for i in range(n):
+        if k==n:
+            print("yes")
+            break
+        elif k<n:
+            k = k*(i+1)
+        else:
+            print("no")
+            break
+        
+#2nd Method
+n = int(input())
+k=1
+count=1
+p=1
+while n>k:
+    if p>0:
+        k=k*count
+        count=count+1
+        p=p+1
+    
+else:
+    if n==k:
+        print("yes")
+    else:
+        print("no")
+       
