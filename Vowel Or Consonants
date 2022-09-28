@@ -1,0 +1,11 @@
+# Vowel Or Consonants
+a = input()
+vowels = 'AEIOUaeiou'
+if (a>='A' and a<='Z') or (a>='a' and a<='z'):
+    if a in vowels:
+        print('Vowel')
+    else:
+        print('Consonant')
+else:
+    print("Not an alphabet")
+    
