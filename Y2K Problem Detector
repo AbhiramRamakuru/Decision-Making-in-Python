@@ -1,0 +1,16 @@
+'''
+Question:
+Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99").
+The program is to correctly write out the user’s age in years.
+'''
+
+PROGRAM (Answer):
+
+#Y2K Problem Detector
+by = int(input("Enter Year of Birth\n"))
+cy = int(input("Enter Current Year\n"))
+if by>cy:
+    print(f"Your age is {100+cy-by}")
+else:
+    print(f"Your age is {cy-by}")
+    
