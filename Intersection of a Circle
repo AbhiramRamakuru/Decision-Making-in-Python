@@ -1,0 +1,51 @@
+'''
+QUESTION:
+In this problem you must write a program that determines if two circles intersect each other. 
+The input to your program will be the <x, y> coordinates for the center of each circle, followed by the radius(r) of each circle. 
+The output will state whether the circles overlap, do not overlap, or are tangential (i.e., tangential circles touch each other at just one common point).
+
+Input Format:
+Input consists of 6 integers. The first integer corresponds to the x-coordinate of the centre of the first circle. 
+The second integer ccorresponds to the y-coordinate of the centre of the first circle. The third integer corresponds to the radius of the first circle. 
+The next 3 integers correspond to the x,y and radius of the second circle.
+
+Output Format:
+The output consists of a single line which contains any of these 3 strings --- “The circles are tangential”, “The circles overlap”, “The circles do not overlap”
+'''
+
+#PROGRAM (Answer):
+
+#Intersection of a Circle
+x1,y1 = int(input()),int(input())
+r1 = int(input())
+x2,y2 = int(input()),int(input())
+r2 = int(input())
+d = (x2-x1)**2 + (y2-y1)**2
+r = r1 + r2
+if d==(r**2):
+    print("The circles are tangential")
+elif d>(r**2):
+    print("The circles do not overlap")
+else:
+    print("The circles overlap")
+    
+    
+'''   
+import math
+x1,y1 = int(input()),int(input())
+r1 = int(input())
+x2,y2 = int(input()),int(input())
+r2 = int(input())
+d = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+r = r1 + r2
+if d==r:
+    print("The circles are tangential")
+elif d>r:
+    print("The circles do not overlap")
+else:
+    print("The circles overlap")
+    
+'''
+
+
+
